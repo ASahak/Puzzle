@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+
+    </head>
+    <body ng-app="myApp" ng-controller="myCtrl" ng-keydown="keydown($event)">
+        
+        <!--<div ng-repeat="rex in list" ng-init="esim = $index">
+            <div ng-repeat="rel in rex" ng-init="esim2 = $index">
+                <span>list [{{esim}} ][{{esim2}}] = {{rel}}</span>
+            </div>
+        </div> lav funkcia zangvacneri initov 1.1-->
+        <div id="author">
+            <p><b>Game Author</b></p>
+            <p>Junior Angular2 JS Developer <b>Arthur Sahakyan</b></p>
+        </div>
+        <div id="change">
+            <div id="change_image">
+                <b>Choose Image</b>
+                <img src="img/angular2.png" ng-click="photo_ang()"  ng-class="dis">
+                <img src="img/sadasdsadasdsdasd.png" ng-click="photo_js()" ng-class="red">
+                <button ng-click="shuffle()" id="shuffle">Shuffle</button>
+            </div>
+            <div id="change_size">
+                <b>Choose Size</b>
+                <button ng-click="three_click()" id="three">3 X 3</button>
+                <button ng-click="for_click()" id="for">4 X 4</button>
+            </div>
+        </div>
+        <div id="design" ng-show="threetothree">
+            
+                <p ng-bind-html="one"></p>
+                <p ng-bind-html="two"></p>
+                <p ng-bind-html="three"></p>
+            
+            
+                <p ng-bind-html="for"></p>
+                <p ng-bind-html="five"></p>
+                <p ng-bind-html="six"></p>
+            
+                <p ng-bind-html="seven"></p>
+                <p ng-bind-html="eight"></p>
+                <p ng-bind-html="nine"></p>
+           
+        </div>
+        <div id="design_2"  ng-show="fortofor">
+            
+                <p ng-bind-html="ein"></p>
+                <p ng-bind-html="zwei"></p>
+                <p ng-bind-html="drei"></p>
+                <p ng-bind-html="fier"></p>
+            
+                <p ng-bind-html="funf"></p>
+                <p ng-bind-html="sex"></p>
+                <p ng-bind-html="sieben"></p>
+                <p ng-bind-html="acht"></p>
+                
+                <p ng-bind-html="neun"></p>
+                <p ng-bind-html="zehn"></p>
+                <p ng-bind-html="elf"></p>
+                <p ng-bind-html="zweolf"></p>
+            
+                <p ng-bind-html="dreizehn"></p>
+                <p ng-bind-html="fierzehn"></p>
+                <p ng-bind-html="funfzehn"></p>
+                <p ng-bind-html="sexzehn"></p>
+           
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>

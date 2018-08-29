@@ -1,0 +1,110 @@
+body{
+    background-image: url(../img/noise-bg.png);
+}
+#design{
+    width: 40%;
+    height: 400px;
+    position: absolute;
+    top: 500px;
+    bottom: 50%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    border: 6px solid;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#design_2{
+    width: 50%;
+    height: 600px;
+    position: absolute;
+    top: 500px;
+    bottom: 20%;
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    border: 6px solid;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#design_2 > p{
+    height: 25%;
+    margin:  auto;
+    width: 25%;
+}
+#design > p{
+    height: 33.3%;
+    margin:  auto;
+    width: 33.3%;
+}
+#design_2 > p img{
+    width: 99%;height: 99%;
+    margin: 1px;
+     
+}
+#design > p img{
+    width: 99.6%;height: 99%;
+     
+}
+#change{
+    display: flex;
+    justify-content: center;
+}
+#change_image{
+        display: flex;
+    height: 100px;
+    align-items:center
+}
+#change_size{
+        display: flex;
+    height: 100px;
+    align-items:center;
+    margin-left: 40px;
+}
+#change_image img{
+    height: 90%;
+    width: 100px;
+    border: 2px solid;
+    margin: 3px;
+}
+#change_size button{
+    margin: 3px;
+}
+#shuffle{
+    background:rgba(0,0,0,0.2);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+}
+#shuffle:hover, #change_image img:hover, #for:hover, #three:hover{
+    cursor: pointer;
+}
+#three, #for{
+    background:rgba(0,0,0,0.2);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+}
+#author{
+    margin: -30px 0;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px white
+}
+#author p:first-child{
+    font-size: 2em;
+}
+#author p:last-child{
+    font-size: 2em;
+}
+.asa{
+    outline: 2px solid red !important;
+}
+
